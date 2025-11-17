@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const ListItem: React.FC<Props> = ({ label }) => {
-  const [checked, setChecked] = useState(true);
+  const [checked, setChecked] = useState(false);
 
   const handleToggle = () => setChecked((prev) => !prev);
   return (
